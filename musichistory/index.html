@@ -15,18 +15,18 @@ View Music <b>|</b>
 <div class="super">
 <div class="leftbox">
 
-
       <p><label for="song-length">Song Length:</label></p>
       <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
 
-
+<div class="artist">
     <p><label for =album>Artist:</label></p>
     <p><select name="album"></p>
 		<option value=:"album1">Artist Name1</option>   
 		<option value=:"album2">Artist Name2</option>
 		<option value=:"album3">Artist Name3</option>      
 	</select>
- 
+</div>
+
     <p><label for =album>Album:</label></p>
     <p><select name="album">
 		<option value=:"album1">Album Name1</option>   
@@ -34,20 +34,26 @@ View Music <b>|</b>
 		<option value=:"album3">Album Name3</option>      
 	</select></p>
 
-      	<label for="song-length">Genre:</label>
-<div id="genre">
- 		<input type="checkbox" name="rock" value="Rock" vertical-align:middle > Rock
- 		<input type="checkbox" name="classical" value="Classical"vertical-align:middle; > Classical
- 		<input type="checkbox" name="pop" value="Pop" vertical-align:middle > Pop
- 		<input type="checkbox" name="jazz" value="Jazz"vertical-align:middle > Jazz
- 		<input type="checkbox" name="blues" value="Blues"
- 		vertical-align:middle>
- 		Blues
- 		<input type="checkbox" name="hiphop" value="Hip Hop" vertical-align:middle > Hip Hop
- </div>
-<br>
 
-      <input type="button" name="filter" value="Filter">
+     
+      	<label class="song-length">Genre:
+<div class="genre">
+	<ol>
+		<div class="left">
+ 			<li><input type="checkbox" value="1">Rock</li>
+			<li><input type="checkbox" value="1">Classical</li>
+			<li><input type="checkbox" value="1">Pop</li>
+		</div>
+		<div class="right">
+			<li><input type="checkbox" value="1">Jazz</li>
+			<li><input type="checkbox" value="1">Blues</li>
+			<li><input type="checkbox" value="1">Hip Hop</li>
+		</div>
+ 	</ol>
+</div>
+ 		<br> <input type="button" name="filter" value="Filter">
+ 	</label>
+<br>
 
 
 </div>
@@ -66,7 +72,6 @@ View Music <b>|</b>
 <div class="bottombox">
 </div>
 </div>
-<div class="space1"></div>
-<div class="space2"></div>
+
 
 </html>

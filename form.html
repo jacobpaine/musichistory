@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+</head>
+
+<body>
+  <nav></nav>
+
+
+
+
+
+  <form action="form.html" method="POST">
+    <fieldset>
+      <legend>Tell us about yourself</legend>
+      <label for="first-name" >Enter your first name</label>
+      <input type="text" name="first-name" autofocus>
+      <br/>
+      <label for="last-name">Enter your last name</label>
+      <input type="text" name="last-name">
+      <br/>
+      <label for="email-address">Enter your email address</label>
+      <input type="email" name="email" placeholder="you@somewhere.com">
+      <br/>
+      <label for="telephone">Enter your mobile number</label>
+      <input type="tel" name="telephone" placeholder="888-867-5309">
+      <br/>
+      <label for="favorite-url">Enter your favorite web site</label>
+      <input type="url" name="favorite-url" placeholder="www.facebook.com">
+      <br/>
+      <label for="favorite-color">Enter your favorite color</label>
+      <input name="favorite-color" type="color" value="#ff8800">
+    </fieldset>
+    
+    <fieldset>
+      <legend>Tell us about where you live</legend>
+    
+      <input name="country" list="country_name">
+      <datalist id="country_name">
+          <option value="Afghanistan">
+          <option value="Albania">
+          <option value="Algeria">
+          <option value="Andorra">
+          <option value="Armenia">
+          <option value="Australia">
+          <option value="Austria">
+          <option value="Azerbaijan">
+      </datalist>
+    </fieldset>
+      
+    <fieldset>
+      <legend>Temperature settings</legend>
+      <label for="temperature-range">Preferred room temperature</label>
+      <input type="range" name="temperature-range" min="15" max="25" step="0.5" value="18.5">
+
+      <label for="temperature">Preferred room temperature</label>
+      <input type="number" name="temperature" step="2" min="20" max="30">
+    </fieldset>
+
+    
+
+    <fieldset>
+      <legend>Give us feedback</legend>
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments"></textarea>
+    </fieldset>
+
+    <label for="feedback-type">Comment type</label>
+    <select id="feedback-type" name="type">
+      <option>Bug report</option>
+      <option>Praise</option>
+      <option>Feature request</option>
+    </select>
+
+    <fieldset>
+      <legend>Which product are you using</legend>
+
+      <input type="radio" name="product-type" value="word"> Word
+      <input type="radio" name="product-type" value="excel"> Excel
+      <input type="radio" name="product-type" value="powerpoint"> Powerpoint
+    </fieldset>
+
+    <fieldset>
+      <legend>What type of customer are you?</legend>
+
+      <input type="checkbox" name="student" value="student"> Student
+      <input type="checkbox" name="advanced" value="advanced"> Advanced User
+      <input type="checkbox" name="groundhog" value="whistlepig"> Groundhog
+    </fieldset>
+
+    <fieldset>
+      <legend>Credentials</legend>
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <br/>
+      <label for="password">Password</label>
+      <input type="password" name="password">
+    </fieldset>
+
+    <input type="submit" value="Submit Details"></input>
+  </form>
+
+  <header></header>
+
+  <article>
+    <header></header>
+    <section></section>
+    <footer></footer>
+  </article>
+
+  <footer></footer>
+
+</body>
+</html>
+ 
+
+

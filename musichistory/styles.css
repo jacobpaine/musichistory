@@ -25,6 +25,34 @@
 	list-style-type: none;
 }
 
+
+div.genre {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 2;
+}
+
+
+
+.left{
+	text-indent: 
+}
+
+.right{
+	text-indent: 50%;
+	text-align: right;
+}
+
+
+
+
+
+
+
+li.genre{
+	text-indent: 5%;
+}
+
 .rightbox{
 	width: 70%; 
 	flex-grow:1;
@@ -51,11 +79,6 @@ input[type="range"] {
   height: 10px;
   border: 3px solid black;
 }
-
-#genre {
-	text-align: justify;
-}
-
 
 /*
 .bottombox{
