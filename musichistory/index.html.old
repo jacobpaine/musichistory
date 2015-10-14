@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <title>Music History</title>
+</head>
+
+<div class="topbox">
+View Music <b>|</b>
+<a href="html">Add Music </a><b>|</b>
+<a href="html">Profile</a>
+</div>
+<div class="super">
+
+<body>
+
+
+<div id= "container">
+</div>
+
+
+<div class="leftbox">
+
+      <p><label for="song-length">Song Length:</label></p>
+      <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
+
+<div class="artist">
+    <p><label for =album>Artist:</label></p>
+    <p><select name="album"></p>
+		<option value=:"album1">Artist Name1</option>   
+		<option value=:"album2">Artist Name2</option>
+		<option value=:"album3">Artist Name3</option>      
+	</select>
+</div>
+
+    <p><label for =album>Album:</label></p>
+    <p><select name="album">
+		<option value=:"album1">Album Name1</option>   
+		<option value=:"album2">Album Name2</option>
+		<option value=:"album3">Album Name3</option>      
+	</select></p>
+
+
+     
+<label class="song-length">Genre:
+<div class="genre">
+	<ol>
+		<div class="left">
+ 			<li><input type="checkbox" value="1">Rock</li>
+			<li><input type="checkbox" value="1">Classical</li>
+			<li><input type="checkbox" value="1">Pop</li>
+		</div>
+		<div class="right">
+			<li><input type="checkbox" value="1">Jazz</li>
+			<li><input type="checkbox" value="1">Blues</li>
+			<li><input type="checkbox" value="1">Hip Hop</li>
+		</div>
+ 	</ol>
+</div>
+ 		<br> <input type="button" name="filter" value="Filter">
+ 	</label>
+<br>
+
+
+</div>
+
+<div id class="songbox">
+
+	<h2>Song Name</h2>
+	
+	<li>Artist name | Album Name | Genre</li>
+
+	
+	<li>Artist name | Album Name | Genre</li>
+
+
+
+	<div id="songlist">
+	</div>
+</div>
+
+<div class="bottombox">
+</div>
+
+	<script src="songs.js"></script>
+
+</body>
+</html>

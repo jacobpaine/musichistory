@@ -2,76 +2,78 @@
 
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-  <meta charset="utf-8">
-  <title>NSS Starter Kit</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+ 	<meta charset="utf-8">
+ 	<title>Music History</title>
 </head>
 
-<div class="topbox">
-View Music <b>|</b>
-<a href="html">Add Music </a><b>|</b>
-<a href="html">Profile</a>
-</div>
-<div class="super">
-<div class="leftbox">
+<body>
 
-      <p><label for="song-length">Song Length:</label></p>
-      <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
+	<div id="top" class="box">
+		View Music <b>|</b>
+		<a href="html">Add Music </a><b>|</b>
+		<a href="html">Profile</a>
+	</div>
 
-<div class="artist">
-    <p><label for =album>Artist:</label></p>
-    <p><select name="album"></p>
-		<option value=:"album1">Artist Name1</option>   
-		<option value=:"album2">Artist Name2</option>
-		<option value=:"album3">Artist Name3</option>      
-	</select>
-</div>
-
-    <p><label for =album>Album:</label></p>
-    <p><select name="album">
-		<option value=:"album1">Album Name1</option>   
-		<option value=:"album2">Album Name2</option>
-		<option value=:"album3">Album Name3</option>      
-	</select></p>
-
-
-     
-      	<label class="song-length">Genre:
-<div class="genre">
-	<ol>
-		<div class="left">
- 			<li><input type="checkbox" value="1">Rock</li>
-			<li><input type="checkbox" value="1">Classical</li>
-			<li><input type="checkbox" value="1">Pop</li>
+	<div id="left" class="box">
+		<div id="songlength">
+			 <p><label for="songlength">Song Length:</label></p>
+     		 <input type="range" name="songlength" min="0" max="20" step="0.5" value="0" >
 		</div>
-		<div class="right">
-			<li><input type="checkbox" value="1">Jazz</li>
-			<li><input type="checkbox" value="1">Blues</li>
-			<li><input type="checkbox" value="1">Hip Hop</li>
+		<div id="artistchoice">
+			<p>
+				<label for =artist>Artist:</label>
+			</p>
+   			 <p>
+   			 	<select name="artist">
+					<option value=:"artist1">Artist Name1</option>       
+				</select>
+			</p>
 		</div>
- 	</ol>
-</div>
- 		<br> <input type="button" name="filter" value="Filter">
- 	</label>
-<br>
+
+		<div id="albumchoice">
+			<p>
+				<label for =artist>Album:</label>
+			</p>
+   			 <p>
+   			 	<select name="album">
+					<option value=:"artist1">Album Name1</option>       
+				</select>
+			</p>
+		</div>
+		
+		<div id="genrechoice">
+			<ol>
+				<div class="left">
+ 					<li><input type="checkbox" value="1">Rock</li>
+					<li><input type="checkbox" value="1">Classical</li>
+					<li><input type="checkbox" value="1">Pop</li>
+				</div>
+				<div class="right">
+					<li><input type="checkbox" value="1">Jazz</li>
+					<li><input type="checkbox" value="1">Blues</li>
+					<li><input type="checkbox" value="1">Hip Hop</li>
+				</div>
+ 			</ol>
+		</div>
+		
+		<div id="filterbutton">
+			<input type="button" name="filter" value="Filter">
+		</div>
+	</div>
+
+	<div id="right" class="box">
+		<h2 class = "songtitle">SONGTITLE</h2>
+		<p class = "songbody">SONGBODY</p>
+		<h2 class = "songtitle"></h2>
+		<p class = "songbody"></p>
+		<h2 class = "songtitle"></h2>
+		<p class = "songbody"></p>
+		<h2 class = "songtitle"></h2>
+		<p class = "songbody"></p>
+	</div>
 
 
-</div>
-
-<div class="rightbox">
-	<h2>Song Name</h2>
-	<li>Artist name | Album Name | Genre</li>
-	<h2>Song Name</h2>
-	<li>Artist name | Album Name | Genre </li>
-	<h2>Song Name</h2>
-	<li>Artist name | Album Name | Genre </li>
-	<h2>Song Name</h2>
-	<li>Artist name | Album Name | Genre </li>
-</div>
-
-<div class="bottombox">
-</div>
-</div>
-
-
+	<script src="songs.js"></script>
+</body>
 </html>
