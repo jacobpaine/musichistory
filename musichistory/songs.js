@@ -1,9 +1,9 @@
 var songs = [];
-var replacement = "";
+var replacement = [];
 var newSongs = "";
-var spellchecked = "";
+var spellchecked = [];
 var songElement = document.getElementById("songlist");
-
+var array = [];
 
 songs[songs.length] = " Legs > by Z*ZTop on the album Eliminator";
 songs[songs.length] = " The Logical Song > by Supertr@amp on the album Breakfast in America";
@@ -15,14 +15,27 @@ songs.splice(0, 0, "Looking at the World from the Bottom of a Well by Mike Dough
 songs.push(" Jesus etc by Wilco on the album Yankee Hotel Foxtrot");
 
 
-for (i=0;i<songs.length;i++){
-	replacement = songs + songs[i];
-	spellchecked = replacement
+/*for (i=0;i<songs.length;i++){
+	console.log (songs[i]);
+	array = songs[i];
+
+	songs[i] ->spellcheck ->array
+}
+*/
+
+// Count the array, then dump into spellcheck.
+for (j=0;j<songs.length;j++){
+//Spellcheck!	
+	spellchecked = songs[j]
 		.replace(/[*(!@]/g, "")
 		.replace(/>/g, "-");
+// Now we push it into a new array with some divs.
+		array.push("<div>"+spellchecked+"</div>");		
+	}
 
-}
+//Remove the commas
+var array = array.join(" ");
 
-//console.log (spellchecked);
-songElement.innerHTML = spellchecked;
+//Send to HTML
+songElement.innerHTML = array;
 

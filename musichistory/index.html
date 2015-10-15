@@ -1,79 +1,30 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+	<meta charset="utf-8">
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
- 	<meta charset="utf-8">
- 	<title>Music History</title>
+	<link rel="stylesheet" type="text/css" href="musichistory.css">
+	<title>Music History</title>
 </head>
 
-<body>
+<div class="flex-container">
+  <header class="header flex-item">Header</header>
+  
+  <section class="flex-item sidebar__left content">Sidebar
+  	 <p><label for="song-length">Song Length:</label></p>
+      <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
+   </section>
 
-	<div id="top" class="box">
-		View Music <b>|</b>
-		<a href="html">Add Music </a><b>|</b>
-		<a href="html">Profile</a>
-	</div>
-
-	<div id="left" class="box">
-		<div id="songlength">
-			 <p><label for="songlength">Song Length:</label></p>
-     		 <input type="range" name="songlength" min="0" max="20" step="0.5" value="0" >
-		</div>
-		<div id="artistchoice">
-			<p>
-				<label for =artist>Artist:</label>
-			</p>
-   			 <p>
-   			 	<select name="artist">
-					<option value=:"artist1">Artist Name1</option>       
-				</select>
-			</p>
-		</div>
-
-		<div id="albumchoice">
-			<p>
-				<label for =artist>Album:</label>
-			</p>
-   			 <p>
-   			 	<select name="album">
-					<option value=:"artist1">Album Name1</option>       
-				</select>
-			</p>
-		</div>
-		
-		<div id="genrechoice">
-			<ol>
-				<div class="left">
- 					<li><input type="checkbox" value="1">Rock</li>
-					<li><input type="checkbox" value="1">Classical</li>
-					<li><input type="checkbox" value="1">Pop</li>
-				</div>
-				<div class="right">
-					<li><input type="checkbox" value="1">Jazz</li>
-					<li><input type="checkbox" value="1">Blues</li>
-					<li><input type="checkbox" value="1">Hip Hop</li>
-				</div>
- 			</ol>
-		</div>
-		
-		<div id="filterbutton">
-			<input type="button" name="filter" value="Filter">
-		</div>
-	</div>
-
-	<div id="right" class="box">
-		<h2 class = "songtitle">SONGTITLE</h2>
-		<p class = "songbody">SONGBODY</p>
-		<h2 class = "songtitle"></h2>
-		<p class = "songbody"></p>
-		<h2 class = "songtitle"></h2>
-		<p class = "songbody"></p>
-		<h2 class = "songtitle"></h2>
-		<p class = "songbody"></p>
-	</div>
-
-
-	<script src="songs.js"></script>
-</body>
+  <section id ="songlist" class="flex-item main content rightside">Main</section>
+  
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+ 	<script src="songs.js"></script> 
+</div>
 </html>
