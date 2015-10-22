@@ -1,0 +1,22 @@
+.button {
+	display: inline-flex;
+	margin:0% 0% 0% 10%;
+	background-color: gray;
+	padding: 0% 0% 0% 0%;
+
+}
+
+.buttonback{
+	display: block;
+	margin:0% 0% 0% 0%;
+	background-color: red;
+	padding: 0% 0% 0% 0%;
+
+}
+
+/*
+nav a{
+	text-align: center;
+	position: relative;
+}
+*/

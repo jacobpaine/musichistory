@@ -1,6 +1,25 @@
+var arrayOfArtists = [];
+var arrayOfSongs = [];
+var arrayOfAlbums = [];
+var arrayOfDesc = [];
+
+var storedSongs = [];
 
 
-var songs = [];
+// Navigation
+var navigation = document.getElementById("navigation");
+
+navigation.addEventListener("click", function(event) {
+  event.preventDefault();
+  add-page.classList.add("hidden");
+  list-page.classList.add("hidden");
+
+  navigation.classList.add("visible");
+  navigation.classList.remove("hidden");
+});
+
+
+/*var songs = [];
 var replacement = [];
 var newSongs = "";
 var spellchecked = [];
@@ -48,3 +67,7 @@ artistInput.addEventListener("keypress", function (e){
 			toPrint();
 		}
 	});
+
+
+
+*/

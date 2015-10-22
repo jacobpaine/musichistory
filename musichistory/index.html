@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 	<meta charset="utf-8">
-<head>
-	<link rel="stylesheet" type="text/css" href="musichistory.css">
-	<title>Music History</title>
-</head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="musichistory.css">
+		<title>Music History</title>
+	</head>
 
-<div class="flex-container">
-  <header class="header flex-item">Header</header>
-  
-  <section class="flex-item sidebar__left content">Sidebar
-  	 <p><label for="song-length">Song Length:</label></p>
-      <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
-   </section>
+	<header class="header">Header</header>
 
-  <section id ="songlist" class="flex-item main content rightside">Main</section>
-  
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
- 	<script src="songs.js"></script> 
-</div>
+	<nav> 
+		<a href = "Listmusic.html"> List Music </a> |
+		<a href = "Addmusic.html"> Add Music </a>
+	</nav>
+
+	<body>
+		<section class = "sidebar content">Sidebar
+			<p><label for="song-length">Song Length:</label></p>
+		    <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
+		   
+			   	<div class="artist">
+			    	
+			    	<p><label for =a rtist>Artist: 
+			    		<input id = "artist-text" type"text">
+			    		</label></p>
+
+			    	<p><select name="artist"></select></p>
+						<option value=:"artist1">Artist Name1</option>   
+						<option value=:"artist2">Artist Name2</option>
+						<option value=:"artist3">Artist Name3</option>
+					</select>
+				</div>
+
+			    <p><label for =album>Album:</label>			    		<input id = "album-text" type = "text"></p>
+			    <p><select name="album">
+					<option value=:"album1">Album Name1</option>
+					<option value=:"album2">Album Name2</option>
+					<option value=:"album3">Album Name3</option>
+				</select></p>
+
+				<label>Genre: <input id = "artist-text" type"text">
+					<div class="genre">
+						<ol>
+							<div class="lefty">
+					 			<li><input type="checkbox" value="1">Rock</li>
+								<li><input type="checkbox" value="1">Classical</li>
+								<li><input type="checkbox" value="1">Pop</li>
+							</div>
+							<div class="righty">
+								<li><input type="checkbox" value="1">Jazz</li>
+								<li><input type="checkbox" value="1">Blues</li>
+								<li><input type="checkbox" value="1">Hip Hop</li>
+							</div>
+					 	</ol>
+					</div>
+						<input type="button" name="add" value="Add">
+					 	<input type="button" name="filter" value="Filter">
+			 	</label>
+		</section>
+
+
+
+
+
+		 	<section id ="songlist" class="main content rightside">Main
+				<div id="songlist"></div>
+		  	</section>
+		
+		<div class = "spare"></div>
+
+	</body>
+	 	<script src="songs.js"></script> 
 </html>

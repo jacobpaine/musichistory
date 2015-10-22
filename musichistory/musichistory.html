@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<head>
+		<link rel="stylesheet" type="text/css" href="mh.css">
+		<title>Music Archive</title>
+	</head>
+
+	<header class="header">Header</header>
+
+	<nav id = "navigation" class = "navigation"> 
+		<a href = "" id = "list-music" class = "list-music">List Music </a> |
+		<a href = ""> Add Music </a>
+	</nav>
+
+	<body>
+		<section class = "add-page">
+			<p><label for = "song-length">Song Length:</label></p>
+		    <input type = "range" name="song-length" min="0" max="20" step="0.5" value="0" >
+<!--Artist-->
+			   	<div class="artist">
+			    	<p><label for = artist>Artist: </label>
+			    		<input id = "artist-text" type"text">
+			    		</p>
+			    	<p><select name = "artist"></p>
+						<option value = "artist1">Artist Name1</option> 
+					</select>
+				</div>
+<!--Album-->
+			    <p><label for = album>Album:</label>			    <input id = "album-text" type = "text"></p>
+			    <p><select name="album">
+					<option value=:"album1">Album Name1</option>
+				</select></p>
+<!--Genre-->
+				<label>Genre: <input id = "artist-text" type"text">
+					<div class="genre">
+						<ol>
+							<div class="lefty">
+					 			<li><input type = "checkbox" value = "1">Rock</li>
+								<li><input type = "checkbox" value = "1">Classical</li>
+								<li><input type = "checkbox" value = "1">Pop</li>
+							</div>
+							<div class="righty">
+								<li><input type = "checkbox" value= "1" >Jazz</li>
+								<li><input type = "checkbox" value= "1" >Blues</li>
+								<li><input type = "checkbox" value = "1" >Hip Hop</li>
+							</div>
+					 	</ol>
+					</div>
+						<input type = "button" name = "add" value = "Add">
+					 	<input type = "button" name = "filter" value = "Filter">
+			 	</label>
+		</section>
+<!--List Page-->
+		<section class = "list-page" class = "songlist"> blah blah blah
+			<div id = "songlist"></div>
+			<div class = "spare"></div>
+		</section>
+
+	</body>
+	 	<script src="mh.js"></script> 
+</html>

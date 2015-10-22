@@ -23,17 +23,17 @@ View Music <b>|</b>
 
 <div class="leftbox">
 
-      <p><label for="song-length">Song Length:</label></p>
-      <input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
+	<p><label for="song-length">Song Length:</label></p>
+	<input type="range" name="song-length" min="0" max="20" step="0.5" value="0" >
 
-<div class="artist">
-    <p><label for =album>Artist:</label></p>
-    <p><select name="album"></p>
-		<option value=:"album1">Artist Name1</option>   
-		<option value=:"album2">Artist Name2</option>
-		<option value=:"album3">Artist Name3</option>      
-	</select>
-</div>
+	<div class="artist">
+	    <p><label for =album>Artist:</label></p>
+	    <p><select name="album"></p>
+			<option value=:"album1">Artist Name1</option>   
+			<option value=:"album2">Artist Name2</option>
+			<option value=:"album3">Artist Name3</option>      
+		</select>
+	</div>
 
     <p><label for =album>Album:</label></p>
     <p><select name="album">
@@ -42,40 +42,30 @@ View Music <b>|</b>
 		<option value=:"album3">Album Name3</option>      
 	</select></p>
 
-
-     
-<label class="song-length">Genre:
-<div class="genre">
-	<ol>
-		<div class="left">
- 			<li><input type="checkbox" value="1">Rock</li>
-			<li><input type="checkbox" value="1">Classical</li>
-			<li><input type="checkbox" value="1">Pop</li>
+	<label class="song-length">Genre:
+		<div class="genre">
+			<ol>
+				<div class="left">
+		 			<li><input type="checkbox" value="1">Rock</li>
+					<li><input type="checkbox" value="1">Classical</li>
+					<li><input type="checkbox" value="1">Pop</li>
+				</div>
+				<div class="right">
+					<li><input type="checkbox" value="1">Jazz</li>
+					<li><input type="checkbox" value="1">Blues</li>
+					<li><input type="checkbox" value="1">Hip Hop</li>
+				</div>
+		 	</ol>
 		</div>
-		<div class="right">
-			<li><input type="checkbox" value="1">Jazz</li>
-			<li><input type="checkbox" value="1">Blues</li>
-			<li><input type="checkbox" value="1">Hip Hop</li>
-		</div>
- 	</ol>
-</div>
- 		<br> <input type="button" name="filter" value="Filter">
- 	</label>
-<br>
-
-
+		<input type="button" name="filter" value="Filter">
+	</label>
 </div>
 
 <div id class="songbox">
 
 	<h2>Song Name</h2>
-	
 	<li>Artist name | Album Name | Genre</li>
-
-	
 	<li>Artist name | Album Name | Genre</li>
-
-
 
 	<div id="songlist">
 	</div>

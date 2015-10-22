@@ -1,0 +1,15 @@
+nav{
+	font-size: 45px;
+	display:block;
+}
+
+.add-page{
+	color:blue;
+	visibility: hidden;
+}
+
+.list-page{
+	color:green;
+	visibility: hidden;
+}
+
