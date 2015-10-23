@@ -1,7 +1,7 @@
-{ 
+{
   "songs": [
     {
-      "title": "The Walk",
+      "title": "The cat",
       "artist": "Mayer Hawthorne",
       "album": "How Do You Do"
     },
@@ -12,10 +12,9 @@
     },
     {
       "title": "Legs",
-      "artist": "ZZ Top",
+      "artist": "ZZ Top", 
       "album": "Eliminator"      
     }
   ]
 }
-
 
